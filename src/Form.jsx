@@ -8,8 +8,7 @@ export const Form = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs
-      .sendForm('service_5goaltg', 'template_4bx1ezs', form.current, {
+    emailjs.sendForm('service_5goaltg', 'template_4bx1ezs', form.current, {
         publicKey: 'Ur_I_y3LsHvbROGoK',
       })
       .then(
