@@ -23,9 +23,9 @@ export const Form = () => {
   return (
     <form className="formContainer" ref={form} onSubmit={sendEmail}>
       <label>Name</label>
-      <input type="text" name="user_name" />
+      <input type="text" name="from_name" />
       <label>Email</label>
-      <input type="email" name="user_email" />
+      <input type="email" name="from_email" />
       <label>Message</label>
       <textarea name="message" />
       <input className='button' type="submit" value="Send" />
