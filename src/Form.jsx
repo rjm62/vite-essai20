@@ -1,5 +1,6 @@
 import {useRef} from 'react';
 import emailjs from '@emailjs/browser';
+import './Form.css'
 
 export const Form = () => {
   const form = useRef();
@@ -8,8 +9,8 @@ export const Form = () => {
     e.preventDefault();
 
     emailjs
-      .sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, {
-        publicKey: 'YOUR_PUBLIC_KEY',
+      .sendForm('service_5goaltg', 'template_4bx1ezs', form.current, {
+        publicKey: 'Ur_I_y3LsHvbROGoK',
       })
       .then(
         () => {
@@ -22,14 +23,14 @@ export const Form = () => {
   };
 
   return (
-    <form ref={form} onSubmit={sendEmail}>
+    <form className="formContainer" ref={form} onSubmit={sendEmail}>
       <label>Name</label>
       <input type="text" name="user_name" />
       <label>Email</label>
       <input type="email" name="user_email" />
       <label>Message</label>
       <textarea name="message" />
-      <input type="submit" value="Send" />
+      <input className='button' type="submit" value="Send" />
     </form>
   );
 };

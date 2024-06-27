@@ -1,0 +1,17 @@
+.formContainer {
+    display: flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:flex-start;
+    margin-left: 130px;
+}
+
+label {
+    color: red;
+}
+
+.button {
+    margin-left: 60px;
+    margin-top: 20px;
+    color: red;
+}
