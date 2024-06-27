@@ -8,9 +8,8 @@ export const Form = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('service_5goaltg', 'template_odf40lg', form.current, {
-        publicKey: 'Ur_I_y3LsHvbROGoK',
-      })
+    emailjs.sendForm('service_5goaltg', 'template_odf40lg', form.current, 
+     'Ur_I_y3LsHvbROGoK')
       .then(
         () => {
           console.log('SUCCESS!');
