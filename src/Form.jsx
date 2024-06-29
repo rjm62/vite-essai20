@@ -11,8 +11,8 @@ export const Form = () => {
     emailjs.sendForm('service_5goaltg', 'template_odf40lg', form.current, 
      'Ur_I_y3LsHvbROGoK')
       .then(
-        () => {
-          console.log('SUCCESS!');
+        (response) => {
+          console.log('SUCCESS!', response);
         },
         (error) => {
           console.log('FAILED...', error.text);
